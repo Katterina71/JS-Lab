@@ -31,7 +31,10 @@ for (let week = 1; week <=10; week++) {
 
 console.log( "In 10 weeks will be " + plants_100 + " plants.");
 const area_max = plants_100 * plant_area;
-console.log(area_max);
+console.log(area_max + " square meters.");
+
+garden_radius = Math.sqrt(area_max/PI);
+console.log(Math.round(garden_radius) + " meters.");
 
 // Part 3: Errors in Judgement
 
