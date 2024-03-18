@@ -25,6 +25,9 @@ const fuelcost = 3;
 const budget = 175; 
 
 
+//Display on html file:
+const btn1 = document.getElementById('btn1');
+
 // Calculate how much gasoline is required for each speed
 const galused55mph = tripdistanse /mpg55; // 55 m/h
 const galused60mph = tripdistanse /mpg60; // 60 m/h
@@ -67,3 +70,11 @@ else {
   console.log("The best speed is 75 m/h. It will take "+ Math.round(hourspertrip75pmh) + " hours and you spend " + Math.round(galused75mph) + " Gallons. Budget will be "+ Math.round(budget75mph) + "$." );
 }
 
+// Display on index.html
+function fun1 (){
+  out1.innerHTML = txt1.value;
+}
+
+btn1.addEventListener('click', fun1);
+console.log(1);
+console.log(txt1);
